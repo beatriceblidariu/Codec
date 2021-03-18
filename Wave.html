@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Despre</title>
+	<link rel="stylesheet" type="text/css" href="css/pagini.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!------NavigationBar--->
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		 <a class="navbar-brand"><img src="img/logo3.png" ></a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        	<a class="nav-link" href="index.html">ACASĂ</a>
+		      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link" href="#about">DESPRE</a>
+		      </li>
+		      <li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALGORITMI CU PIERDERI DE DATE</a>
+		      
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="MPEG1_2.html">MPEG-1/2</a>
+			          <a class="dropdown-item" href="DOLBY.html">Dolby AC-3</a>
+			          <a class="dropdown-item" href="AAC.html">AAC</a>
+			      </div>
+			  </li>
+		     <li class="nav-item dropdown">
+       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		       	 ALGORITMI FĂRĂ PIERDERI DE DATE</a>
+		    
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="Wave.html">Wave Format</a>
+			          <a class="dropdown-item" href="FLAC.html">FLAC</a>
+			          <a class="dropdown-item" href="monkey.html">Monkey`s Audio</a>
+			      </div>
+			      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link " href="phpmailer/index.php">ÎNTREBĂRI</a>
+		      </li>
+		    </ul>
+		 </div>
+		</nav>
+	</section>
+
+
+<section id="content">
+	<div class="container">
+		<h1 class="text-center">Wave Format</h1>
+		<br><br>
+			<p>WAVE (sau pur și simplu Wav) este formatul nativ de fișier utilizat de sistemul de operare Windows pentru stocarea datelor audio digitale. Audio-ul a devenit la fel de important ca imaginile și videoclipurile, motiv pentru care sistemele de operare moderne suportă un format nativ pentru fișiere audio. Popularitatea Windows și cantitatea mare de software disponibil pentru platforma PC au garantat popularitatea formatului Wave.În primul rând, există trei note tehnice:
+				<ul>
+					<li> Formatul de fișier Wave este nativ pentru Windows și, prin urmare, rulează pe procesoare Intel care utilizează comanda octet endian mic.</li>
+					 <li> Wave prezinta șir de text pentru a specifica o  etichetă, notă, și alt informații. Șiruri a căror dimensiune nu este cunoscută în avans sunt stocate în așa-numitul format Pascal în cazul în care primul octet specifică numărul de octeți de text ASCII în șir.</li>
+					 <li> WAV (sau . WAV) format de fișier este un caz special de wave în cazul în care nu se utilizează nici o compresie. </li>
+				</ul>
+
+			<p>O referință recomandată pentru Wave și alte formate de fișiere importante este [Born 95]. Cu toate acestea, este întotdeauna o idee bună pentru a căuta pe Internet pentru referințe noi. Organizarea unui fișier Wave se bazează pe structura riff standard. RIFF vine de la Resource Interchange File Format. Aceasta este baza mai multor formate de fișiere importante.Fișierul este format din bucăți, în cazul în care fiecare bucată începe cu un antet și poate conține subchunks, precum și date. De exemplu, fmt și bucăți de date sunt de fapt subchunks de bucată RIFF. Noi tipuri de bucăți pot fi adăugate în viitor, ceea ce duce la o situație în care software-ul existent nu recunoaște noi bucăți. Astfel, regula generală este de a sări peste orice bucăți de nerecunoscut. Dimensiunea totală a unei bucăți trebuie să fie un număr par de octeți (un multiplu de doi octeți), motiv pentru care o bucată se poate termina cu un octet de căptușeală zero. Prima bucată dintr-un fișier Wave isRIFF. Acesta începe cu riff 4-octet șir, urmată de dimensiunea părții rămase a fișierului (în patru octeți), urmată de string WAVE.</p>
+
+			
+
+		
+</div>
+	
+</section>
+
+
+</body>
+</html>

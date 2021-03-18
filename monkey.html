@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Despre</title>
+	<link rel="stylesheet" type="text/css" href="css/pagini.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!------NavigationBar--->
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		 <a class="navbar-brand"><img src="img/logo3.png" ></a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        	<a class="nav-link" href="index.html">ACASĂ</a>
+		      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link" href="#about">DESPRE</a>
+		      </li>
+		      <li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALGORITMI CU PIERDERI DE DATE</a>
+		      
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="MPEG1_2.html">MPEG-1/2</a>
+			          <a class="dropdown-item" href="DOLBY.html">Dolby AC-3</a>
+			          <a class="dropdown-item" href="AAC.html">AAC</a>
+			      </div>
+			  </li>
+		     <li class="nav-item dropdown">
+       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		       	 ALGORITMI FĂRĂ PIERDERI DE DATE</a>
+		    
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="Wave.html">Wave Format</a>
+			          <a class="dropdown-item" href="FLAC.html">FLAC</a>
+			          <a class="dropdown-item" href="monkey.html">Monkey`s Audio</a>
+			      </div>
+			      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link " href="phpmailer/index.php">ÎNTREBĂRI</a>
+		      </li>
+		    </ul>
+		 </div>
+		</nav>
+	</section>
+
+
+<section id="content">
+	<div class="container">
+		<h1 class="text-center">Monkey`s Audio</h1>
+		<br><br>
+				<p>	Monkey’s Audio este un algoritm audio rapid, eficient, gratuit, fără pierderi Această metodă prezintă, de asemenea, următoarele caracteristici importante:
+					<ul>
+						<li> Detectarea erorilor. Implementarea include CRC în fluxul comprimat pentru a detecta practic toate erorile.</li>
+						<li> Suport pentru etichetare. Algoritmul introduce etichete în fluxul comprimat. Astfel, este ușor pentru un utilizator să gestioneze și să catalogheze o întreagă colecție de fișiere audio comprimate cu acest codec.</li>
+						<li> Suport extern. Monkey’s audio poate fi utilizat și ca un front-end la un codor de linie de comandă. Instrumentul GUI curent permite utilizarea unor encoders diferite linii de comanda prin crearea unui script XML simplu care descrie modul de trecere a parametrilor și valorile de întoarcere pe care le caută</li>
+						<li> Codul sursă este disponibil în mod liber. Dezvoltatorii de software o pot utiliza (modificat sau nu) în alte programe fără restricții.</li>
+					</ul>
+				</p>
+
+				<p>Primul pas în  Monkey’s audio este transformarea canalelor stereo stânga și dreapta în X (mijloc sau medie) și Y (laterală sau diferență) canale conform X = (L+R)/2 și Y=l-R. Corelația dintre L și R se datorează  canalullui median X ,care este similar atât cu L, cât și cu R, în timp ce canalul lateral Y este format din numere mici. Se observă că elementele (coeficienții de transformare) ale lui X și Y sunt numere întregi, dar nu mai sunt eșantioane audio. De asemenea, transformarea este reversibilă, deși divizarea cu 2 provoacă pierderea bitului cel mai puțin semnificativ (LSB) din X, acest bit poate fi reconstruit de decodor deoarece este identic cu LSB din Y. (Observați că LBS-urile cu orice sumă A + B și diferența A–B sunt aceleași.)</p>
+
+				<p>Următorul pas este predicția. Această etapă exploatează corelația între elementele consecutive din canalele intermediare și secundare. Monkey’s audio utilizează o metodă nouă de predicție liniară care constă dintr-un predicator fix de prim ordin, urmat de filtre cu decalaj multiple. Există grade diferite de filtrare a plasei neurale, în funcție de nivelul de compresie — până la trei filtre neurale consecutive cu 1024 ferestre de eșantionare la cea mai mare compresie.</p>
+
+				<p>În ultima sa etapă,  Monkey’s audio codifică reziduurile cu un coder range-style. Fluxul comprimat este organizat în cadre, unde fiecare cadru are un CRC pe 31 de biți (un CRC standard pe 32 de biți cu cel mai semnificativ bit redus). Codorul calculează și suma de verificare MD5 pentru întregul fișier. Decodorul începe prin verificarea acestei sume. O verificare eșuată indică o eroare, iar decodorul localizează eroarea prin verificarea CRC-urilor cadrelor individuale.	</p>
+<p><a href="https://monkeysaudio.com">Aici </a> se găsește site-ul de unde se poate descărca programul</p>
+		
+</div>
+	
+</section>
+
+
+</body>
+</html>

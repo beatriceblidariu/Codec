@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Despre</title>
+	<link rel="stylesheet" type="text/css" href="css/pagini.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!------NavigationBar--->
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		 <a class="navbar-brand"><img src="img/logo3.png" ></a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        	<a class="nav-link" href="index.html">ACASĂ</a>
+		      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link" href="#about">DESPRE</a>
+		      </li>
+		      <li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALGORITMI CU PIERDERI DE DATE</a>
+		      
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="MPEG1_2.html">MPEG-1/2</a>
+			          <a class="dropdown-item" href="DOLBY.html">Dolby AC-3</a>
+			          <a class="dropdown-item" href="AAC.html">AAC</a>
+			      </div>
+			  </li>
+		     <li class="nav-item dropdown">
+       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		       	 ALGORITMI FĂRĂ PIERDERI DE DATE</a>
+		    
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="Wave.html">Wave Format</a>
+			          <a class="dropdown-item" href="FLAC.html">FLAC</a>
+			          <a class="dropdown-item" href="monkey.html">Monkey`s Audio</a>
+			      </div>
+			      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link " href="phpmailer/index.php">ÎNTREBĂRI</a>
+		      </li>
+		    </ul>
+		 </div>
+		</nav>
+	</section>
+
+
+<section id="content">
+	<div class="container">
+		<h1 class="text-center">Dolby AC-3</h1>
+		<br><br>
+				<p>Dolby Laboratories dezvoltă și oferă produse și tehnologii care fac experiența de divertisment mai realistă și mai captivantă. Timp de patru decenii Dolby a fost în fruntea definirii sunetului audio și surround de înaltă calitate în cinema, difuzare, sisteme audio de acasă, mașini, DVD-uri, căști, jocuri, televizoare și computere personale. Cu sediul în San Francisco, cu sediul european în Anglia, compania are birouri de legătură în industria divertismentului în New York și Los Angeles și birouri de legătură cu licențierea în Londra, Shanghai, Beijing, Hong Kong și Tokyo.AC-3, cunoscut și sub numele de Dolby Digital, reprezintă coderul audio de a treia generație al dolby. AC-3 este un codec audio perceptual bazat pe aceleași principii ca și cele trei straturi MPEG-1/2 și AAC.AC-3 a fost dezvoltat pentru a combina rata scăzută de biți  cu o calitate excelentă a sunetului reconstruit</p>
+
+				<p>Dolby AC-3  se distinge de alte codificatoare perceptive prin  faptul că inițial a fost proiectat pentru a suporta mai multe canale audio.Metoda Dolby surround implică codificarea a patru canale audio - față stânga, centru, față dreapta și spate - într-un semnal cu două canale. Un circuit de decodare separă apoi cele patru canale și le trimite către difuzoarele corespunzătoare, spre stânga, dreapta, spate și centru fantomă (canalul central este derivat din canalele frontale L / R). Rezultatul este un mediu de ascultare echilibrat în care sunetele principale provin din canalele din stânga și din dreapta, sunetul vocal sau dialogul se redă prin canalul fantomă central, iar atmosfera sau efectele provin din spatele ascultătorului. Astfel, numărul de canale audio utilizate în echipamentele de sunet a crescut constant de-a lungul anilor și a fost normal ca Dolby să vină cu o metodă de compresie audio care acceptă până la cinci canale</p>
+					
+				<p>Prima etapă a codificatorului AC-3 este gruparea eșantioanelor audio (care pot fi de până la 24 de biți fiecare) în blocuri de 512 probe fiecare. Fiecare bloc este evaluat pentru a determina dacă sunetul său este tonal sau tranzitoriu. Dacă sunetul este tranzitoriu, dimensiunea blocului este redusă la 256 de probe audio. Fiecare bloc este mapat pe domeniul de frecvență de un DCT modificat. Numărul coeficienților de frecvență calculați pentru bloc este jumătate din dimensiunea blocului. Șase blocuri alcătuiesc o fereastră, iar dimensiunile blocurilor din fereastră pot fi comutate între lung și scurt.</p>
+
+				<p>Odată calculați coeficienții de frecvență, codificatorul îi folosește într-un proces denumit rematrixare pentru a efectua codificarea multicanal. Coeficienții de frecvență rezultați din MDCT sunt numere reale și sunt păstrate în format punct de inflație, cu o mantisă și un exponent. Primul include cifrele semnificative ale coeficientului, în timp ce al doilea indică mărimea acestuia.</p>
+
+				<p>Compresia se realizează prin codificarea exponenților și cuantificarea mantiselor (cantitatea de cuantificare depinde de rutina de alocare a biților). Prima compresie este fără pierderi, în timp ce cea din urmă este fără pierderi. Rutina de alocare a biților aplică un model psihoacustic pentru a determina precizia adecvată necesară mantiselor.</p>
+
+				<p>Ultima etapă a codificatorului este aceea de a combina (multiplex) exponenții codificați și mantisele cuantificate cu informații de control, cum ar fi lock switching ﬂags, coupling parameters, rematrixing ﬂags, exponent stategy bits, dither ﬂags, and bit allocation parameters pentru a crea fluxul final de ieșire.</p>
+
+		
+</div>
+	
+</section>
+
+
+</body>
+</html>

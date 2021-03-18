@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Despre</title>
+	<link rel="stylesheet" type="text/css" href="css/pagini.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!------NavigationBar--->
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		 <a class="navbar-brand"><img src="img/logo3.png" ></a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        	<a class="nav-link" href="index.html">ACASĂ</a>
+		      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link" href="#about">DESPRE</a>
+		      </li>
+		      <li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALGORITMI CU PIERDERI DE DATE</a>
+		      
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="MPEG1_2.html">MPEG-1/2</a>
+			          <a class="dropdown-item" href="DOLBY.html">Dolby AC-3</a>
+			          <a class="dropdown-item" href="AAC.html">AAC</a>
+			      </div>
+			  </li>
+		     <li class="nav-item dropdown">
+       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		       	 ALGORITMI FĂRĂ PIERDERI DE DATE</a>
+		    
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="Wave.html">Wave Format</a>
+			          <a class="dropdown-item" href="FLAC.html">FLAC</a>
+			          <a class="dropdown-item" href="monkey.html">Monkey`s Audio</a>
+			      </div>
+			      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link " href="phpmailer/index.php">ÎNTREBĂRI</a>
+		      </li>
+		    </ul>
+		 </div>
+		</nav>
+	</section>
+
+
+<section id="content">
+	<div class="container">
+		<h1 class="text-center">AAC</h1>
+		<br><br>
+			<p>	Advanced Audio Coding (AAC) este un standard de codificare audio pentru compresie audio digitală cu pierderi. Proiectat pentru a fi succesorul formatului MP3, AAC atinge, în general, o calitate a sunetului mai mare decât MP3 la aceeași rată de biți.</p>
+			
+			<p>AAC a fost standardizat de ISO și IEC, ca parte a specificațiilor MPEG-2 și MPEG-4. Partea AAC, HE-AAC ("AAC+"), face parte din MPEG-4 Audio și, de asemenea, este adoptată în standardele de radio digital DAB+ și Digital Radio Mondiale, precum și standardele de televiziune mobilă DVB-H și ATSC-M/H.
+			AAC prezintă următoarele caracteristici: 
+				<ul>
+					<li> Rata de codare: 320-384 kbiţi/s pentru 5 canale, 64 kbiţi/canal.</li>
+					<li> Semnal codat NBC la 320kbiţi/s are aceeaşi calitate ca semnalul codat BC la 640kbiţi/s.</li>
+					<li> Permite codarea multicanal: 1-48 canale audio, 0-16 canale LFE (low frequency enhancement), 0-16 canale de date.</li>
+					<li> Aceeaşi structură (codare perceptuală pe subbenzi) ca la MPEG-1 cu unele îmbunătăţiri</li>
+				</ul>
+			</p>
+
+			<p>AAC este formatul audio implicit sau standard pentru iPhone, iPod, iPad, Nintendo DSi, Nintendo 3DS, iTunes, DivX Plus Web Player, PlayStation 3 și diverse telefoane Nokia Series 40. Acesta este acceptat pe PlayStation Vita, Wii, Sony Walkman MP3 serie și mai târziu, Android și BlackBerry. AAC este, de asemenea, susținută de către producătorii de sisteme audio auto in-dash.</p>
+
+			<p>Îmbunătățirile AAC ului asupra MP3
+				<ul>
+					<li> mai multe rate de eșantionare (de la 8 la 96 kHz) decât MP3 (16 la 48 kHz);</li>
+					<li> până la 48 de canale (MP3 acceptă până la două canale în modul MPEG-1 și până la 5,1 canale în modul MPEG-2);</li>
+					<li> rate de biți arbitrare și lungimea variabilă a cadrului. Rată de biți constantă standardizată cu rezervor de biți;</li>
+					<li> eficiență mai mare și mai simplu filtru bancă. AAC utilizează un MDCT pur (transformare discretă modificată a cosinusului), mai degrabă decât codificarea hibridă MP3 (care a fost parte MDCT și o parte FFT);</li>
+					<li> eficiență mai mare de codificare pentru semnalele staționare (AAC utilizează o cluze de 1024 sau 960 de eșantioane, permițând o codificare mai eficientă decât cele 576 de blocuri eșantion mp3);</li>
+					<li> o precizie mai mare de codificare pentru semnalele tranzitorii (AAC utilizează o cluze de 128 sau 120 de eșantioane, permițând o codificare mai precisă decât cele 192 de blocuri eșantion mp3);</li>
+					<li> o manevrare mult mai bună a frecvențelor audio de peste 16 kHz;</li>
+					<li> stereo comun mai flexibil (diferite metode pot fi utilizate în diferite intervale de frecvență);</li>
+					<li> module suplimentare (instrumente) adăugate pentru a crește eficiența compresiei: TNS, predicție inversă, substituție perceptuală a zgomotului (PNS), etc. Aceste module pot fi combinate pentru a constitui diferite profiluri de codificare.</li>
+				</ul>
+			</p>
+
+		
+</div>
+	
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Despre</title>
+	<link rel="stylesheet" type="text/css" href="css/pagini.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!------NavigationBar--->
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		 <a class="navbar-brand"><img src="img/logo3.png" ></a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        	<a class="nav-link" href="index.html">ACASĂ</a>
+		      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link" href="#about">DESPRE</a>
+		      </li>
+		      <li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALGORITMI CU PIERDERI DE DATE</a>
+		      
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="MPEG1_2.html">MPEG-1/2</a>
+			          <a class="dropdown-item" href="DOLBY.html">Dolby AC-3</a>
+			          <a class="dropdown-item" href="AAC.html">AAC</a>
+			      </div>
+			  </li>
+		     <li class="nav-item dropdown">
+       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		       	 ALGORITMI FĂRĂ PIERDERI DE DATE</a>
+		    
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="Wave.html">Wave Format</a>
+			          <a class="dropdown-item" href="FLAC.html">FLAC</a>
+			          <a class="dropdown-item" href="monkey.html">Monkey`s Audio</a>
+			      </div>
+			      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link " href="phpmailer/index.php">ÎNTREBĂRI</a>
+		      </li>
+		    </ul>
+		 </div>
+		</nav>
+	</section>
+
+
+<section id="content">
+	<div class="container">
+		<h1 class="text-center">MPEG-1/2</h1>
+		<br><br>
+				<p>	Standardele de MPEG-1 și 2  prezintă trei metode de compresie împărțite în 3 straturi, anume I, II și III.Toate aceste straturi fac parte din standardul MPEG-1. Oricare dintre cele trei straturi poate fi utilizat pentru compresia unui fișier audio și nu necesită niciun material video.</p>
+
+				<p>Straturile superioare pot utiliza modulele straturilor inferioare  deoarece straturile superioare au carcteristici suplimentare care duc la o compresie mai bună. Aceste straturi formează o ierarhie pentru că un decodor care aparține stratului III poate decoda un fișier audio  comprimat de starurile I și II.</p>
+
+				<p>Stratul I sună destul de bine la rate de biți mai mari, dar oferă o eficiență de compresie foarte scăzută. Principala sa utilizare a fost pe caseta compactă digitală, care a fost demult uitată.Reprezintă algoritmul de bază pentru codarea audio și se parcurge astfel:
+						<ul>
+						<li> Bancul de filtre împarte semnalul audio în 32 de subbenzi de frecvenţă cu lăţime egală. Acesteanu corespund cu benzile critice.</li>
+						<li> Codorul calculează pragul de mascare folosind benzile critice.</li>
+						<li> Eroarea care apare la reconstrucţie nu este mare.</li>
+						<li> Cadrul este format din 12 eşantioane/subbandă.</li>
+						<li> Conţine un model psihoacustic pentru determinarea adaptivă a alocării biţilorşi pentrucuantizare.</li>
+						<li> Domeniile de aplicaţie includ înregistrarea digitală pe bandă sau disc. </li>
+						</ul>
+				</p>
+
+				<p>Stratul II a  eclipsat stratul 1, deoarece oferă ocodare mult mai eficientă.. Acesta este comandat ca un codec audio pentru video CD. Regula generală este că stratul 2 necesită o rată de biți mai mare  cu aproximativ 50 \% pentru a suna la fel de bine ca un fișier audio de tip  MP3, astfel încât 192 Kbps în stratul II sună la fel de bine ca un MP3 de 128 Kbps. Rata de bit comprimată pentru un semnal de calitate CD-audio stereo este între 64 Kbps şi 256 Kbps  faţă de 1.4Mbps necomprimat. Se utilizează în studiourile profesionale (radiodifuziune, înregistrări), telecomunicaţii, multimedia. Algoritmul din acest strat a venit cu câteva îmbunătăţiri faţă de stratul I, și anume:
+						
+						<ul>
+						<li> Codarea suplimentară a alocării biţilor, a factorilor de scalare şi o structură diferită a cadrului.</li>
+						<li> Codorul formează 3 blocuri cu 12 eşantioane/bloc şi 32 de subbenzi (1152 eşantioane).</li>
+						<li> Se transmite un tip de alocare a biţilor şi maxim 3 factori de scalare pentru 3 blocuri (câte un factor de scalare pentru fiecare bloc).</li>
+						</ul>
+				</p>
+
+				<p>Stratul III nu a fost adoptat niciodată pe scară largă în MPEG-1, din cauza taxelor de licență. Cu toate acestea, a devenit o tehnologie extrem de populară în sine, deși sub denumirea prescurtată, MP3. Ratele de transfer de date de nivel III se încadrează între 32 și 320 Kbps.
+						Veți dori întotdeauna să utilizați startul II ca și  coloană sonoră pentru fișierele MPEG, deoarece foarte puțini acceptă nivelul III într-un fișier MPEG. A ajuns să fie cel mai bun  strat de compresie deoarece:
+						<ul>
+						<li> Creşte complexitatea codorului/decodorului.
+						<li> Conţine un banc de filtre hibrid (filtre plus MDCT- modified discrete cosine transform).</li>
+						<li> Se obţine o rezoluţie mai bună în frecvenţă prin utilizarea MDCT.</li>
+						<li> Două lungimi ale blocului MDCT: 36 eşantioane şi 12 eşantioane.</li>
+						<li> Aplicaţii în telecomunicaţii pe canale de banda îngustă ISDN, mp3şi alte aplicaţii cu debitfoarte redus.</li>
+						</ul>
+				</p>
+
+				<p>Caracteristica importantă a formatului MPEG este raportul de compresie, pe care standardul îl specifică în prealabil. Standardul solicită un flux comprimat cu una dintre cele mai multe rate de biți (figura 3.4) cuprinse între 32 și 224 kbps pentru fiecare canal audio (în mod normal, sunt două canale, pentru sunet stereo). În funcție de rata de eșantionare inițială, aceste rate de biți se traduc prin factori de compresie de la 2.7 (scăzut) la 24.  Motivul pentru care se specifică rata de biți a fluxului comprimat este faptul  că fluxul include și date comprimate pentru piesele video și de sistem. </p>
+		
+</div>
+	
+</section>
+
+
+</body>
+</html>

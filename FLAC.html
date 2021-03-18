@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Despre</title>
+	<link rel="stylesheet" type="text/css" href="css/pagini.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!------NavigationBar--->
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		 <a class="navbar-brand"><img src="img/logo3.png" ></a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        	<a class="nav-link" href="index.html">ACASĂ</a>
+		      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link" href="#about">DESPRE</a>
+		      </li>
+		      <li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ALGORITMI CU PIERDERI DE DATE</a>
+		      
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="MPEG1_2.html">MPEG-1/2</a>
+			          <a class="dropdown-item" href="DOLBY.html">Dolby AC-3</a>
+			          <a class="dropdown-item" href="AAC.html">AAC</a>
+			      </div>
+			  </li>
+		     <li class="nav-item dropdown">
+       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		       	 ALGORITMI FĂRĂ PIERDERI DE DATE</a>
+		    
+		       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="Wave.html">Wave Format</a>
+			          <a class="dropdown-item" href="FLAC.html">FLAC</a>
+			          <a class="dropdown-item" href="monkey.html">Monkey`s Audio</a>
+			      </div>
+			      </li>
+		      <li class="nav-item">
+		       	 <a class="nav-link " href="phpmailer/index.php">ÎNTREBĂRI</a>
+		      </li>
+		    </ul>
+		 </div>
+		</nav>
+	</section>
+
+
+<section id="content">
+	<div class="container">
+		<h1 class="text-center">FLAC</h1>
+		<br><br>
+				<p>	Numele FLAC este un acronim pentru free lossless audio compression,Flac a fost special creat pentru compresia audio și acceptă redarea în flux și arhivarea datelor audio.Faptul că FLAC este o sursă deschisă încurajează utilizatorii să selecteze FLAC pentru arhivarea audio.
+				Proiectul FLAC constă din:
+					<ul>
+						<li> formatul fluxului comprimat, </li>
+						<li> codificatoare de referință și decodoare în formă de bibliotecă,</li>
+						<li> un codec flac software de linie de comandă, </li>
+						<li> metaflac, un editor de metadate de linie de comandă pentru fișiere FLAC și plugin-uri de intrare pentru diferite playere muzicale.</li>
+					</ul>
+
+				<p>Aceste obiective implică principalele caracteristici ale FLAC, care sunt următoarele:
+					<ul>
+						<li> Fără pierderi. Există multe metode excelente de compresie audiocu  pierdere, motiv pentru care dezvoltatorii FLAC au decis să îl creeze ca agloritm cu pierderi de date și să îl păstreze așa</li>
+						<li> Rapid. FLAC a fost proiectat pentru decodare rapidă. Acest lucru este important în compresie audio, deoarece decodorul de multe ori trebuie să ieșire audio în timp real, pentru a fi decodate și redate simultan</li>
+						<li> Streamable. Fluxul comprimat FLAC este format din cadre, unde fiecare cadru conține toate datele necesare pentru a decoda cadrul. Decodarea unui cadru nu necesită cadre anterioare. Fluxul comprimat FLAC include coduri de sincronizare și CRC-uri (similare cu MPEG și alte formate) care facilitează saltul rapid al decodorului la orice punct din fluxul comprimat.</li>
+						<li> Căutat. Posibilitatea de a trece la orice punct din audio este utilă atât pentru redare, cât și pentru aplicațiile de editare audio</li>
+						<li> Potrivit pentru arhivare. O arhivă poate beneficia de date comprimate, dar necesită compresie fără pierderi</li>
+						<li> Arhivare convenabilă a CD-urilor. Unul dintre blocurile de metadate ale fluxului comprimat FL are o „foaie de reper” pentru stocarea unui conținut CD și a tuturor punctelor de traseu și index. Într-o aplicație tipică, un CD este convertit într-un singur fișier și este extrasă foaia sa de reper. Fișierul este apoi comprimat într-un singur fișier FLAC cu un bloc de metadate care conține foaia de referință extrasă. Dacă CD-ul original este deteriorat, fișierul FLAC cu foaia de timp poate fi convertit înapoi și ars pentru a deveni o copie exactă a CD-ului.</li>
+						<li> Rezistent la erori. Multe codecuri fără pierderi nu includ nicio funcție pentru fiabilitatea sau integritatea datelor. O singură eroare într-un flux comprimat poate împiedica decodorul să continue. Fluxul comprimat FLAC, în contrast, constă din cadre, fiecare reprezentând o mică fracțiune de secundă de sunet. Dacă o eroare deteriorează o ramă, decodorul poate totuși localiza următoarea ramă și poate continua. Acest lucru limitează orice daune cauzate sistemului audio de erori în timpul transmiterii sau stocării; o caracteristică importantă, practică.</li>
+					</ul>
+				</p>
+
+		<p><a href="https://xiph.org/flac/">Aici </a> se găsește site-ul de unde se poate descărca pachetul software</p>
+</div>
+	
+</section>
+
+
+</body>
+</html>
